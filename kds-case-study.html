@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Study – KDS | Weston Verhoff</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script src="image-tile.js"></script>
+	<script src="lightbox.js"></script>
+  <meta name="description" content="Case study for Project Name by Weston Verhoff – Product Designer specializing in UX/UI, design systems, and front-end development." />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold hover:text-blue-600">← Back to Portfolio</a>
+      <h1 class="text-2xl font-semibold">Kohl's Design System</h1>
+    </div>
+  </header>
+
+  <!-- Hero / Overview -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-4xl font-bold mb-4">Kohl's Design System</h2>
+    <p class="text-lg text-gray-600 mb-8">
+      Brief summary of the project, your role, and what the case study will cover.
+    </p>
+
+    <div>
+      <img src="images/KDS-hero-image.png" alt="Screenshot or visual of Project Name" class="w-full rounded-lg shadow-md" />
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
+    <h3 class="text-2xl font-semibold mb-4">The Problem</h3>
+    <p class="text-gray-700 leading-relaxed">
+      When I was assigned to Kohl’s Design System (KDS), it had been defunct and abandoned for over two years. Although designers were expected to use it, there was no clear guidance or documentation. The Figma components were rigid, difficult to use, and the underlying codebase was outdated, making adoption frustrating and inconsistent across teams.
+    </p>
+  </section>
+
+  <!-- Process -->
+  <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
+    <h3 class="text-2xl font-semibold mb-4">The Process</h3>
+    <p class="text-gray-700 leading-relaxed mb-6">
+      Tasked with revitalizing KDS and driving adoption, I partnered closely with the engineering team to update the codebase and ensure technical stability. I actively solicited feedback from design teams through weekly critiques to understand their needs, iterating on components until they were truly useful and easy to use. Overcoming a lack of leadership direction, I focused on making the design system better by empowering designers rather than enforcing usage.
+    </p>
+		<lightbox-tile
+			class="h-full"
+	    src="images/kds-process.png"
+	    alt="KDS Process diagram"
+	    title="KDS Process"
+	    desc="">
+	  </lightbox-tile>
+  </section>
+
+	<!-- Solution Section -->
+<section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
+  <h3 class="text-2xl font-semibold mb-4">The Solutions</h3>
+  <p class="text-gray-700 leading-relaxed mb-6">
+    I redesigned and documented scalable Figma components tailored to real design workflows, including complex components like the product tile—crafted to handle every variation through modular subcomponents. I also implemented a feedback and requests form directly tied to our backlog, streamlining communication and saving time for both contributors and maintainers. <br> <strong>Here's what each of the components I created taught me: </strong>
+  </p>
+	<div class="grid md:grid-cols-2 gap-6">
+  <!-- Project Tile 1 -->
+	<lightbox-tile
+		src="images/button-docs.png"
+		alt="Button documentation screenshot"
+		title="Designing with Constraints: The Button"
+		desc="The button component was politically sensitive, with many departments wanting control over its appearance and behavior. To manage this, we minimized design input and instead focused on guidelines for what not to do—ensuring designers across the organization could use the button consistently without deviating from the design system. Click anywhere to view the full documentation."
+		link-text="View documentation">
+	</lightbox-tile>
+
+  <!-- Project Tile 2 -->
+	<lightbox-tile
+		src="images/product-tile.png"
+		alt="Product tile documentation screenshot"
+		title="Navigating Complexity: The Product Tile"
+		desc="The Kohl's product card was challenging to document due to its complex pricing variations. The documentation aimed to give designers flexibility in using the component, while maintaining minimal prescriptive rules. Click anywhere on the tile to view the full documentation."
+		link-text="View documentation">
+	</lightbox-tile>
+  <!-- Project Tile 3 -->
+	<lightbox-tile
+		src="images/elevation-docs.png"
+		alt="Elevation documentation screenshot"
+		title="Creating Clarity: Elevation Effects"
+		desc="I customized Tailwind’s drop shadow effects to align with Kohl’s brand and usability needs. Then, I developed clear guidelines to help designers choose the right elevation for different elements, ensuring consistent visual hierarchy and a cohesive user experience across the product."
+		link-text="View documentation">
+	</lightbox-tile>
+</div>
+
+
+<!-- Modal Overlay (hidden by default) -->
+<div
+  id="imageModal"
+  class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden "
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+  aria-describedby="modalDesc"
+  tabindex="-1"
+>
+  <div class="relative max-w-4xl w-full">
+    <button
+      onclick="closeModal()"
+      class="absolute top-2 right-2 text-gray-600 text-3xl font-bold hover:text-gray-950 focus:outline-none"
+      aria-label="Close full-size image"
+    >
+      &times;
+    </button>
+		<div class="overflow-auto max-h-[80vh] max-w-full rounded-lg shadow-lg mx-auto">
+		  <img
+		    id="modalImage"
+		    src="images/button-docs.png"
+		    alt=""
+		    class="max-w-none max-h-none"
+		    style="width: 100%; height: auto;"
+		  />
+		</div>
+    <p
+      id="modalDesc"
+      class="text-white mt-4 text-center text-lg"
+    ></p>
+  </div>
+</div>
+
+  <!-- Results -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-semibold mb-4">Results & Impact</h3>
+    <p class="text-gray-700 leading-relaxed">
+      While precise metrics were hard to track, adoption across multiple teams increased significantly. Our Site Standards team could work more efficiently, thanks to alignment between updated KDS styles and the evolving site pages. The product tile component became a shared resource, adopted by multiple designers and featured in high-visibility patterns like product carousels and homepage recommendations.
+    </p>
+  </section>
+
+  <!-- Reflection -->
+  <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
+    <h3 class="text-2xl font-semibold mb-4">Reflection</h3>
+    <p class="text-gray-700 leading-relaxed">
+      This project taught me the power of resourcefulness in the face of unclear authority and limited support. By focusing on usability and collaboration, I was able to inspire team members to care about and contribute to the system’s growth. Tackling the most complex component first—as advised by design system expert Dan Mall—helped pave the way for smoother development of all subsequent components, turning what felt like an uphill battle into meaningful progress.
+    </p>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="max-w-4xl mx-auto px-4 py-16 text-center">
+    <a href="/" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition">
+      ← Back to Portfolio
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 mt-16 border-t text-center text-gray-500">
+    © 2025 Weston Verhoff. All rights reserved.
+  </footer>
+
+</body>
+</html>

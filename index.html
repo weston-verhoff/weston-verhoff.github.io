@@ -22,30 +22,45 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="max-w-6xl mx-auto px-4 py-20 text-center">
-    <h2 class="text-4xl font-bold mb-4">Product Designer & Front-End Developer</h2>
-    <p class="text-lg text-gray-600 mb-8">
-      I design and build engaging, user-centered digital experiences that blend form and function.
-    </p>
-    <a href="#work" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-      View My Work
-    </a>
-  </section>
+	<section
+	  class="relative h-screen bg-cover bg-center"
+	  style="background-image: url('images/hero-image.jpg');"
+	>
+	  <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
+	    <h1 class="text-5xl font-bold text-white mb-4 max-w-3xl">
+	      Product Designer & Front-End Developer
+	    </h1>
+	    <p class="text-lg text-gray-200 mb-8 max-w-xl">
+	      I design and build engaging, user-centered digital experiences that blend form and function.
+	    </p>
+	    <a href="#work" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition">
+	      View My Work
+	    </a>
+	  </div>
+	</section>
 
   <!-- Portfolio Section -->
   <section id="work" class="max-w-6xl mx-auto px-4 py-16">
     <h3 class="text-3xl font-bold mb-8">Featured Work</h3>
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Project Card -->
-      <div class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition">
-        <img src="images/kds-cover.png" alt="Project 1" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h4 class="text-xl font-semibold mb-2">Kohl's Design System</h4>
-          <p class="text-gray-600 mb-4">Short description of the project and your role in it.</p>
-          <a href="#" class="text-blue-600 hover:underline">View Case Study →</a>
-        </div>
-      </div>
-      <!-- Repeat for more projects -->
+			<project-tile
+			  img-src="images/kds-cover.png"
+			  img-alt="Cover image for Kohl's Design System project"
+			  title="Kohl's Design System"
+			  desc="For more than 2 years, I was the primary designer responsible for reviving and maintaining the Kohl's Design System."
+			  link-url="kds-case-study.html"
+			  link-text="View Case Study →"
+			></project-tile>
+			<!-- Project Card -->
+			<project-tile
+			  img-src="images/audit-project.png"
+			  img-alt="Kohl's app and webstore audit screenshot"
+			  title="Full App / Webstore Audit"
+			  desc="The Kohl's App accommodated our most loyal customers, and was by far our fastest growing channel. The inconsistencies between platforms were causing undue friction for our customers, and it was my job to fix that."
+			  link-url="chronos-case-study.html"
+			  link-text="View Case Study →"
+			></project-tile>
     </div>
   </section>
 
@@ -54,15 +69,21 @@
     <div class="max-w-6xl mx-auto px-4">
       <h3 class="text-3xl font-bold mb-6">About Me</h3>
       <p class="text-gray-700 leading-relaxed">
-        Brief bio about your background, skills, and design philosophy. Highlight your design system expertise, coding skills, and collaborative approach.
+				I’m Weston Verhoff, a results-driven Product Designer with a passion for building scalable, user-centered design systems and crafting seamless digital experiences. With over four years of professional experience — most recently leading design efforts for Kohl’s enterprise-level design system — I specialize in bridging the gap between design and front-end development to deliver high-quality, accessible UI components.
+
+				Skilled in Figma, Adobe XD, and front-end technologies like HTML, CSS, JavaScript, and React, I thrive in Agile environments where collaboration and rapid iteration drive success. I’ve mentored design teams, worked closely with developers and product managers, and consistently incorporated user feedback to create intuitive interfaces that align with business goals.
+
+				Beyond design, I bring a foundation in interaction design, wireframing complex flows, and a commitment to continuous learning. My background in UX communication design and a minor in business administration empower me to approach challenges holistically — balancing user needs, technical feasibility, and strategic impact.
+
+				When I’m not designing or coding, I’m likely lifting weights, cooking, reading, or working on pet projects like my <a href="https://ezextrack.netlify.app">workout tracker</a>.
       </p>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+  <section id="contact" class="w-fit mx-auto px-4 py-16 text-center">
     <h3 class="text-3xl font-bold mb-6">Contact</h3>
-    <p class="mb-4">Interested in working together? Let’s connect.</p>
+    <p class="mb-12">Interested in working together? Let’s connect.</p>
     <a href="mailto:westonverhoff@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
       Email Me
     </a>
@@ -72,6 +93,6 @@
   <footer class="bg-white py-6 mt-16 border-t text-center text-gray-500">
     © 2025 Weston Verhoff. All rights reserved.
   </footer>
-
+<script src="project-tile.js"></script>
 </body>
 </html>
