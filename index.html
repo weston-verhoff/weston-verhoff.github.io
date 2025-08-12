@@ -23,12 +23,12 @@
 
   <!-- Hero Section -->
 	<section
-	  class="relative h-screen bg-cover bg-center"
-	  style="background-image: url('images/hero-image.jpg');"
+	  class="relative h-screen bg-cover bg-left"
+	  style="background-image: url('images/headshot-wide.png');"
 	>
 	  <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
 	    <h1 class="text-5xl font-bold text-white mb-4 max-w-3xl">
-	      Product Designer & Front-End Developer
+	       Weston – UX Designer & Front End Developer
 	    </h1>
 	    <p class="text-lg text-gray-200 mb-8 max-w-xl">
 	      I design and build engaging, user-centered digital experiences that blend form and function.
@@ -40,12 +40,12 @@
 	</section>
 
   <!-- Portfolio Section -->
-  <section id="work" class="max-w-6xl mx-auto px-4 py-16">
-    <h3 class="text-3xl font-bold mb-8">Featured Work</h3>
+  <section id="work" class="max-w-6xl mx-auto px-4 py-16 bg-slate-300">
+    <h3 class="text-3xl font-bold mb-8 text-center">Featured Work</h3>
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Project Card -->
 			<project-tile
-			  img-src="images/kds-cover.png"
+			  img-src="images/kds-hero-image.png"
 			  img-alt="Cover image for Kohl's Design System project"
 			  title="Kohl's Design System"
 			  desc="For more than 2 years, I was the primary designer responsible for reviving and maintaining the Kohl's Design System."
@@ -56,10 +56,26 @@
 			<project-tile
 			  img-src="images/audit-project.png"
 			  img-alt="Kohl's app and webstore audit screenshot"
-			  title="Full App / Webstore Audit"
+			  title="Full App / Webstore Audit (Ongoing)"
 			  desc="The Kohl's App accommodated our most loyal customers, and was by far our fastest growing channel. The inconsistencies between platforms were causing undue friction for our customers, and it was my job to fix that."
 			  link-url="chronos-case-study.html"
 			  link-text="View Case Study →"
+			></project-tile>
+			<project-tile
+			  img-src="images/weight-tracker.png"
+			  img-alt="Weight Tracker image"
+			  title="Python Weight Tracker"
+			  desc="This is a personal project I started for two reasons: to track my weight loss for free, and to learn Python. It also gave me the opportunity to learn to use LLMs to help me create apps faster."
+			  link-url="weightTracker-case-study.html"
+			  link-text="View Case Study →"
+			></project-tile>
+			<project-tile
+			  img-src="images/ezextrack.png"
+			  img-alt="Exercise Tracker image"
+			  title="React Exercise Tracker"
+			  desc="Another personal project I created to track my workouts and learn React. Created with the assistance of CoPilot and ChatGPT."
+			  link-text="View Case Study →"
+			  link-url="ezextrack-case-study.html"
 			></project-tile>
     </div>
   </section>
@@ -67,8 +83,9 @@
   <!-- About Section -->
   <section id="about" class="bg-gray-100 py-16">
     <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-3xl font-bold mb-6">About Me</h3>
-      <p class="text-gray-700 leading-relaxed">
+      <h3 class="text-3xl font-bold mb-6 text-center">About Me</h3>
+			<img src="images/square-head.png" alt="Portrait photo of Weston" class="rounded-full mx-auto mb-16 h-full w-64 object-contain">
+      <p class="text-gray-700 leading-relaxed text">
 				I’m Weston Verhoff, a results-driven Product Designer with a passion for building scalable, user-centered design systems and crafting seamless digital experiences. With over four years of professional experience — most recently leading design efforts for Kohl’s enterprise-level design system — I specialize in bridging the gap between design and front-end development to deliver high-quality, accessible UI components.
 
 				Skilled in Figma, Adobe XD, and front-end technologies like HTML, CSS, JavaScript, and React, I thrive in Agile environments where collaboration and rapid iteration drive success. I’ve mentored design teams, worked closely with developers and product managers, and consistently incorporated user feedback to create intuitive interfaces that align with business goals.

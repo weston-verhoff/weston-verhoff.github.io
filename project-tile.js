@@ -9,7 +9,7 @@ class ProjectTile extends HTMLElement {
 		console.log('ProjectTile connected:', this.getAttribute('link-text'));
 
 		this.innerHTML = `
-		  <a href="${linkUrl}" class="block bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition text-inherit flex flex-col h-full">
+		  <a href="${linkUrl}" class="block bg-white shadow rounded-lg overflow-hidden hover:shadow-2xl transition text-inherit flex flex-col h-full">
 		    <img src="${imgSrc}" alt="${imgAlt}" class="w-full h-56 object-cover flex-shrink-0" />
 		    <div class="p-6 flex flex-col flex-grow">
 		      <h4 class="text-xl font-semibold mb-2">${title}</h4>
