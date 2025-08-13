@@ -7,10 +7,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="Case study for Project Name by Weston Verhoff – Product Designer specializing in UX/UI, design systems, and front-end development." />
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-
+<body class="text-gray-800 font-sans bg-[url('images/pattern-background-light.png')] bg-slate-100 bg-blend-multiply">
+	<style>
+		ol.list-decimal li::marker {
+			font-weight: bold;
+		}
+	</style>
   <!-- Header -->
-  <header class="bg-white shadow">
+  <header class="shadow bg-white">
     <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
       <a href="index.html" class="text-2xl font-bold hover:text-blue-600">← Back to Portfolio</a>
       <h1 class="text-2xl font-semibold">Project Name</h1>
@@ -18,22 +22,21 @@
   </header>
 
   <!-- Hero / Overview -->
-  <section class="max-w-4xl mx-auto px-4 py-16">
-    <h2 class="text-4xl font-bold mb-4">Project Name</h2>
-    <p class="text-lg text-gray-600 mb-8">
-      Brief summary of the project, your role, and what the case study will cover.
-    </p>
-
-    <div class="mb-8">
-      <img src="images/project-hero.png" alt="Screenshot or visual of Project Name" class="w-full rounded-lg shadow-md" />
-    </div>
+  <section class="px-4 py-16  bg-[url('images/pattern-background.png')] bg-slate-100 bg-blend-multiply">
+		<div class="max-w-4xl mx-auto ">
+	    <h2 class="text-4xl font-bold mb-4">Python Weight Tracker Case Study</h2>
+	    <p class="text-lg text-gray-600 mb-8">
+	      A lightweight local weight tracker to aid me in my fitness journey.
+	    </p>
+	    <img src="images/weight-tracker.png" alt="Screenshot or visual of Project Name" class="w-full rounded-lg shadow-md" />
+		</div>
   </section>
 
   <!-- Problem -->
   <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
     <h3 class="text-2xl font-semibold mb-4">The Problem</h3>
     <p class="text-gray-700 leading-relaxed">
-      Describe the problem or challenge your project aimed to solve. Include any background context or user pain points.
+      I wanted a completely free, lightweight tool to track my weight consistently. Existing solutions were either paid, bloated with unnecessary features, or lacked local data storage. My goal was to create a minimalist tracker that ran on my local machine, saved day-by-day data, and allowed me to visualize trends, while also giving me the opportunity to learn Python and practice version control using GitHub.
     </p>
   </section>
 
@@ -41,21 +44,27 @@
   <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
     <h3 class="text-2xl font-semibold mb-4">The Process</h3>
     <p class="text-gray-700 leading-relaxed mb-6">
-      Explain your design process, methods, research, and collaboration approach.
-    </p>
-    <ul class="list-disc list-inside space-y-2 text-gray-700">
-      <li>Research & discovery</li>
-      <li>Wireframes & prototyping</li>
-      <li>User testing & feedback iterations</li>
-      <li>Implementation & design system integration</li>
-    </ul>
-  </section>
-
+		I approached the project iteratively, starting with a simple proof-of-concept and gradually adding features based on testing and personal needs:</p>
+		<ol class="list-decimal pl-6 space-y-4 mb-12 text-gray-700">
+			<li><strong>Initial Development:</strong>Using GitHub and CoPilot, I built a basic Python script that allowed me to enter daily weights and save them to a CSV file.</li>
+			<li><strong>Visualization: </strong>Added a chart feature to show trends in my weight over time, helping me interpret progress at a glance.</li>
+			<li><strong>Data Management:</strong> While testing, I realized I needed the ability to edit or delete entries in case of mistakes or missing data, so I implemented those features.</li>
+			<li><strong>Weekly Trend Line: </strong>Added a weekly average trend line to reduce noise from day-to-day fluctuations and make progress easier to interpret.</li>
+			<li><strong>Display Order Adjustment: </strong>As the data grew, I reversed the display order to show the most recent entries first, improving usability for ongoing tracking.</li>
+			<li><strong>Iterative Testing: </strong>Each new feature was tested by using the application for several days to ensure it met my needs effectively.</li>
+		</ol>
   <!-- Solution -->
   <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
     <h3 class="text-2xl font-semibold mb-4">The Solution</h3>
     <p class="text-gray-700 leading-relaxed mb-6">
-      Outline the solution you designed and built. Include screenshots or visuals to illustrate.
+      I designed and built a lightweight, user-friendly weight tracking application that enables seamless daily logging, visualization, and management of personal weight data. The app allows users to:
+			<ul class="list-disc pl-6 space-y-4 mb-12 text-gray-700">
+				<li>Enter daily weights quickly and save them to a CSV file for easy long-term storage.</li>
+				<li>View progress through a dynamic chart, making trends immediately visible.</li>
+				<li>Edit or delete entries to maintain accurate records.</li>
+				<li>See a weekly average trend line that smooths out day-to-day fluctuations.</li>
+				<li>Reverse the display order so the most recent entries are always at the top for quick reference.</li>
+			</ul>
     </p>
     <div class="grid md:grid-cols-2 gap-6">
       <img src="images/project-solution-1.png" alt="Solution screenshot 1" class="rounded-lg shadow-md" />
@@ -67,20 +76,24 @@
   <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
     <h3 class="text-2xl font-semibold mb-4">Results & Impact</h3>
     <p class="text-gray-700 leading-relaxed">
-      Share measurable results, feedback, or impact metrics from the project.
+      <ul class="list-disc pl-6 space-y-4 mb-12 text-gray-700">
+      	<li>Created a fully functional, lightweight weight tracker that met my personal requirements.</li>
+      	<li>Enabled me to accurately track progress over time without relying on paid apps or third-party services.</li>
+      	<li>The project strengthened my Python skills and introduced me to iterative development and testing, version control workflows, and simple data visualization techniques.</li>
+      	<li>The project is publicly available on GitHub, allowing for future feature expansion or community contributions.</li>
+      </ul>
     </p>
-    <ul class="list-disc list-inside mt-4 text-gray-700">
-      <li>Increased user engagement by 25%</li>
-      <li>Reduced onboarding time by 15%</li>
-      <li>Positive client testimonials</li>
-    </ul>
   </section>
 
   <!-- Reflection -->
   <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
     <h3 class="text-2xl font-semibold mb-4">Reflection</h3>
     <p class="text-gray-700 leading-relaxed">
-      Discuss what you learned from the project, challenges overcome, and what you would do differently next time.
+			<ul class="list-disc pl-6 space-y-4 mb-12 text-gray-700">
+      	<li>Iterative development and personal testing were crucial for discovering usability improvements I wouldn’t have anticipated initially.</li>
+      	<li>Building this project highlighted the importance of balancing minimalism with functionality: adding only the features that truly enhance value.</li>
+      	<li>The project reinforced my understanding of Python scripting, file I/O, charting, and version control, and gave me confidence to tackle future personal projects or prototype tools for real-world problems.</li>
+      </ul>
     </p>
   </section>
 
