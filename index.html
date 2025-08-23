@@ -27,28 +27,30 @@
 	  style="background-image: url('images/headshot-wide.png');"
 	>
 	  <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
-	    <h1 class="text-5xl font-bold text-white mb-4 max-w-3xl">
+	    <h1 class="text-6xl font-bold text-white mb-12 max-w-3xl">
 	       Weston – UX Designer & Front End Developer
 	    </h1>
-	    <p class="text-lg text-gray-200 mb-8 max-w-xl">
-	      I design and build engaging, user-centered digital experiences that blend form and function.
+	    <p class="text-lg text-gray-200 mb-12 max-w-xl">
+	      I design and build engaging, user-centered digital experiences that optimally blend form and function. I specialize in implementing practical, data-backed solutions across & throughout systems.
 	    </p>
-	    <a href="#work" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition">
+	    <a href="#work" class="bg-blue-50 text-blue-950 font-bold px-8 py-4 rounded-lg hover:bg-blue-300 transition">
 	      View My Work
 	    </a>
 	  </div>
 	</section>
 
   <!-- Portfolio Section -->
-  <section id="work" class="max-w-6xl mx-auto px-16 py-16 shadow-3xl">
-    <h2 class="text-4xl font-bold mb-8 text-center italic">FEATURED PROJECTS</h2>
+  <section id="work" class="max-w-7xl mx-auto mb-72 mt-36 px-16 shadow-3xl">
+		<div class="p-16 bg-blue-50 mix-blend-multiply rounded-lg border border-blue-200">
+			<h2 class="text-6xl text-center font-bold text-blue-900 mb-24 mt-8">Featured Projects</h2>
+
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Project Card -->
 			<project-tile
 			  img-src="images/KDS-hero-image.png"
 			  img-alt="Cover image for Kohl's Design System project"
 			  title="Kohl's Design System"
-			  desc="For more than 2 years, I was the primary designer responsible for reviving and maintaining the Kohl's Design System."
+			  desc="For more than 2 years, I was the primary designer responsible for reviving and maintaining the Kohl's Design System. To do this, I came up with guiding design principles, interviewed team members, and implemented data-backed component solutions."
 			  link-url="kds-case-study.html"
 			  link-text="View Case Study →"
 			></project-tile>
@@ -65,7 +67,7 @@
 			  img-src="images/weight-tracker.png"
 			  img-alt="Weight Tracker image"
 			  title="Python Weight Tracker"
-			  desc="This is a personal project I started for two reasons: to track my weight loss for free, and to learn Python. It also gave me the opportunity to learn to use LLMs to help me create apps faster."
+			  desc="This is a personal project I started for two reasons: to track my weight loss for free, and to learn Python. It also gave me the opportunity to learn LLM-assisted development to help me create apps faster and understand how engineers I work with might do so in the future."
 			  link-url="weightTracker-case-study.html"
 			  link-text="View Case Study →"
 			></project-tile>
@@ -73,10 +75,11 @@
 			  img-src="images/ezextrack.png"
 			  img-alt="Exercise Tracker image"
 			  title="React Exercise Tracker"
-			  desc="Another personal project I created to track my workouts and learn React. Created with the assistance of CoPilot and ChatGPT."
+			  desc="A personal project I created to track my workouts and learn React. Created with the assistance of CoPilot and ChatGPT."
 			  link-text="View Case Study →"
 			  link-url="ezextrack-case-study.html"
 			></project-tile>
+			</div>
     </div>
   </section>
 
@@ -101,7 +104,7 @@
   <section id="contact" class="w-fit mx-auto px-4 py-16 text-center">
     <h3 class="text-3xl font-bold mb-6">Contact</h3>
     <p class="mb-12">Interested in working together? Let’s connect.</p>
-    <a href="mailto:westonverhoff@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+    <a href="mailto:westonverhoff@gmail.com" class="font-bold text-blue-900 border-2 border-blue-900 px-6 py-3 rounded-lg hover:bg-blue-100 transition">
       Email Me
     </a>
   </section>
